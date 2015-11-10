@@ -1,0 +1,129 @@
+#
+# generated on 2015/10/26 04:33:47
+#
+# --table-start--
+dataClass=by.inquirer.buisness.Answer
+tableName=answers
+# --table-fields-start--
+# --field-start--
+fieldName=value
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=type
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=question
+canBeNull=false
+foreign=true
+foreignAutoRefresh=true
+# --field-end--
+# --field-start--
+fieldName=id
+columnName=id
+generatedId=true
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=by.inquirer.buisness.Inquirer
+tableName=inquirers
+# --table-fields-start--
+# --field-start--
+fieldName=name
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=id
+columnName=id
+generatedId=true
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=by.inquirer.buisness.Question
+tableName=questions
+# --table-fields-start--
+# --field-start--
+fieldName=question
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=answerType
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=answers
+foreignCollection=true
+foreignCollectionEager=true
+# --field-end--
+# --field-start--
+fieldName=inquirer
+columnName=inquirer_id
+canBeNull=false
+foreign=true
+# --field-end--
+# --field-start--
+fieldName=orderNumber
+columnName=orderNumber
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=id
+columnName=id
+generatedId=true
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=by.inquirer.buisness.SelectedAnswer
+tableName=selected_answer
+# --table-fields-start--
+# --field-start--
+fieldName=answer
+canBeNull=false
+foreign=true
+# --field-end--
+# --field-start--
+fieldName=question
+canBeNull=false
+foreign=true
+# --field-end--
+# --field-start--
+fieldName=answerList
+canBeNull=false
+foreign=true
+# --field-end--
+# --field-start--
+fieldName=id
+columnName=id
+generatedId=true
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=by.inquirer.buisness.AnswerList
+tableName=answers_list
+# --table-fields-start--
+# --field-start--
+fieldName=date
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=inquirer
+canBeNull=false
+foreign=true
+# --field-end--
+# --field-start--
+fieldName=id
+columnName=id
+generatedId=true
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################

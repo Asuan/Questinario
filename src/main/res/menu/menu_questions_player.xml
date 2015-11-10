@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="by.inquirer.QuestionsPlayer">
+    <item android:id="@+id/action_help"
+          android:title="@string/menu_action_help"
+          android:orderInCategory="100"
+          app:showAsAction="never"/>
+</menu>
